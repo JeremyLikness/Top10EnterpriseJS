@@ -173,7 +173,7 @@ if (navigator.appName.indexOf('Microsoft') != -1) {
     </article>
   </slide>
 
-  <slide class="fill nobackground" style="background-image: url(images/enterprise.jpg)">
+  <slide class="fill nobackground" style="background-image: url(images/waterfall.jpg)">
     <hgroup>
       <h2 class="white">2. Dynamic Requires Strict Measures</h2>
     </hgroup>
@@ -222,9 +222,9 @@ if (navigator.appName.indexOf('Microsoft') != -1) {
     </article>
   </slide>
   
-  <slide class="fill nobackground" style="background-image: url(images/enterprise.jpg)">
+  <slide class="fill nobackground" style="background-image: url(images/tiles.jpg)">
     <hgroup>
-      <h2 class="white">3. Forget Java and C#</h2>
+      <h2 class="black">3. Forget Java and C#</h2>
     </hgroup>
   </slide>
   
@@ -265,9 +265,9 @@ if (navigator.appName.indexOf('Microsoft') != -1) {
     </article>
   </slide>
   
-  <slide class="fill nobackground" style="background-image: url(images/enterprise.jpg)">
+  <slide class="fill nobackground" style="background-image: url(images/fire.JPG)">
     <hgroup>
-      <h2 class="white">4. DOM === Demonic Object Matrix</h2>
+      <h2 class="white ">4. DOM === Demonic Object Matrix</h2>
     </hgroup>
   </slide>
   
@@ -299,14 +299,26 @@ if (navigator.appName.indexOf('Microsoft') != -1) {
     </hgroup>
     <article>
        <pre class="prettyprint" data-lang="javascript">
-          $("#id").val("hello");
+          $("#id").hide();
        </pre>
        <pre class="prettyprint" data-lang="html">
-         &lt;input ng-model="ctrl.hello"/>
+         &lt;input ng-if="ctrl.show"/>
        </pre>
-       <h3>Versus</h3>
+       <p><b>Versus</b></p>
        <pre class="prettyprint" data-lang="javascript">
-         document.getElementyById...
+function hidediv(divId) {  
+    if (document.getElementById) { // DOM3 = IE5, NS6  
+        document.getElementById(divId).style.visibility = 'hidden';  
+        }  
+        else {  
+            if (document.layers) { // Netscape 4  
+                document.divId.visibility = 'hidden';  
+        }  
+        else { // IE 4  
+                document.all.divId.style.visibility = 'hidden';  
+        }  
+    }  
+} 
        </pre>
 
     </article>
@@ -382,7 +394,7 @@ if (navigator.appName.indexOf('Microsoft') != -1) {
           </ul></article>
   </slide>
  
-  <slide class="fill nobackground" style="background-image: url(images/enterprise.jpg)">
+  <slide class="fill nobackground" style="background-image: url(images/framework.jpg)">
     <hgroup>
       <h2 class="white">7. Frameworks Save Lives</h2>
     </hgroup>
@@ -397,9 +409,9 @@ if (navigator.appName.indexOf('Microsoft') != -1) {
     </article>
     </slide>
  
-  <slide class="fill nobackground" style="background-image: url(images/enterprise.jpg)">
+  <slide class="fill nobackground" style="background-image: url(images/legos.jpg)">
     <hgroup>
-      <h2 class="white">8. Don't Just Write It. Build It!</h2>
+      <h2>8. Don't Just Write It. Build It!</h2>
     </hgroup>
   </slide>
   
@@ -424,7 +436,7 @@ if (navigator.appName.indexOf('Microsoft') != -1) {
        </article>
    </slide>
  
-  <slide class="fill nobackground" style="background-image: url(images/enterprise.jpg)">
+  <slide class="fill nobackground" style="background-image: url(images/sky.jpg)">
     <hgroup>
       <h2 class="white">9. Be Testy. Be Very Testy.</h2>
     </hgroup>
@@ -440,7 +452,7 @@ if (navigator.appName.indexOf('Microsoft') != -1) {
     </article>
   </slide>
  
-  <slide class="fill nobackground" style="background-image: url(images/enterprise.jpg)">
+  <slide class="fill nobackground" style="background-image: url(images/beach.jpg)">
     <hgroup>
       <h2 class="white">10. XML is Dead. Long Live JSON!</h2>
     </hgroup>
@@ -468,7 +480,7 @@ if (navigator.appName.indexOf('Microsoft') != -1) {
     <aside class="gdbar right"><img src="images/connectjs128.png"></aside>
     <article class="flexbox vleft auto-fadein">
       <h2>&lt;Thank You!&gt;</h2>
-      <p/>
+      <p><b>https://github.jeremylikness.com/Top10EnterpriseJS</b></p>
     </article>
     <p class="auto-fadein" data-config-contact>
       <!-- populated from slide_config.json -->
